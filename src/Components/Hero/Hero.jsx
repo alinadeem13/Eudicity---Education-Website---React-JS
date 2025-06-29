@@ -12,7 +12,7 @@ const Hero = () => {
           excel in their academic journey.
         </p>
         <button className="btn">
-          Explore More <FaArrowRight />{" "}
+          Explore More <FaArrowRight />
         </button>
       </div>
     </div>
