@@ -9,12 +9,49 @@ import user_3 from "../../assets/user-3.png";
 import user_4 from "../../assets/user-4.png";
 
 const Testimonials = () => {
+  // const slider = useRef();
+  // let tx = 0;
+
+  const slideForward = () => {
+    const slider = document.querySelector(".slider ul");
+    const firstSlide = slider.querySelector("li:first-child");
+    slider.appendChild(firstSlide);
+    // ============= OR ===================
+
+    // if (tx > -50) {
+    //   tx -= 25;
+    //   slider.current.style.transform = `translateX(${tx}%)`;
+    // }
+  };
+
+  const slideBackward = () => {
+    const slider = document.querySelector(".slider ul");
+    const lastSlide = slider.querySelector("li:last-child");
+    slider.insertBefore(lastSlide, slider.firstChild);
+    // ============= OR ===================
+
+    // if (tx < 0) {
+    //   tx += 25;
+    //   slider.current.style.transform = `translateX(${tx}%)`;
+    // }
+  };
+
   return (
     <div className="testimonials">
-      <img src={next_icon} alt="" className="next-btn"></img>
-      <img src={back_icon} alt="" className="back-btn"></img>
+      <img
+        src={next_icon}
+        alt=""
+        className="next-btn"
+        onClick={slideForward}
+      ></img>
+      <img
+        src={back_icon}
+        alt=""
+        className="back-btn"
+        onClick={slideBackward}
+      ></img>
       <div className="slider">
-        <ul>
+        <ul /* ref={slider} */>
           <li>
             <div className="slide">
               <div className="user-info">
