@@ -40,3 +40,17 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+
+/* ======= Media Query ========= */
+
+@media (max-width: 1000px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .btn {
+    padding: 14px 22px;
+  }
+}

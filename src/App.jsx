@@ -7,8 +7,12 @@ import About from "./Components/About/About";
 import Campus from "./Components/Campus/Campus";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/contact";
+import Footer from "./Components/Footer/footer";
+import VideoPlayer from "./Components/VideoPlayer/videoPlayer";
 
 const App = () => {
+  const [playState, setPlayState] = React.useState(false);
+
   return (
     <div>
       <Navbar />
@@ -16,7 +20,7 @@ const App = () => {
       <div className="container">
         <Title subtitle="Our Program" title="What We Offer" />
         <Programs />
-        <About />
+        <About setPlayState={setPlayState} />
         <Title subtitle="Gallery" title="Campus Photos" />
         <Campus />
 
@@ -24,7 +28,9 @@ const App = () => {
         <Testimonials />
         <Title subtitle="Contact Us" title="Get in Touch!" />
         <Contact />
+        <Footer />
       </div>
+      <VideoPlayer playState={playState} setPlayState={setPlayState} />
     </div>
   );
 };
