@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="hero container">
       <div className="hero-text">
-        <h2>We unsure a better education for a better world. </h2>
+        <h1>We unsure a better education for a better world. </h1>
         <p>
           Our cutting-edge curriculum and expert instructors empower students to
           excel in their academic journey.

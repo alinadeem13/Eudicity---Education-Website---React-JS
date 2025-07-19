@@ -4,12 +4,19 @@ import "./About.css"; // Adjust the path as necessary
 import about_img from "../../assets/about.png"; // Adjust the path as necessary
 import play_icon from "../../assets/play-icon.png"; // Adjust the path as necessary
 
-const About = () => {
+const About = ({ setPlayState }) => {
   return (
     <div className="about">
       <div className="about-left">
         <img className="about-img" src={about_img} alt="About" />
-        <img className="play-icon" src={play_icon} alt="Play" />
+        <img
+          className="play-icon"
+          src={play_icon}
+          alt="Play"
+          onClick={() => {
+            setPlayState(true);
+          }}
+        />
       </div>
       <div className="about-right">
         <h3>About University</h3>
