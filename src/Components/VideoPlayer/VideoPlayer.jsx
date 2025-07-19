@@ -1,5 +1,5 @@
 import React from "react";
-import "./videoPlayer.css"; // Adjust the path as necessary
+import "./VideoPlayer.css"; // Adjust the path as necessary
 import video from "../../assets/collegeVideo.mp4"; // Adjust the path as necessary
 
 const VideoPlayer = ({ playState, setPlayState }) => {
