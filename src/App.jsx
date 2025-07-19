@@ -7,7 +7,7 @@ import About from "./Components/About/About";
 import Campus from "./Components/Campus/Campus";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/contact";
-import VideoPlayer from "./Components/VideoPlayer/videoPlayer";
+import VideoPlayer from "./Components/VideoPlayer/VideoPlayer";
 import Footer from "./Components/Footer/Footer";
 
 const App = () => {
